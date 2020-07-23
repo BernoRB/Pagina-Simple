@@ -1,0 +1,30 @@
+/* Por debajo de los 700px activas todas las reglas de esta seccion */
+
+@media (max-width: 780px) {
+
+.products {
+    display: inherit; /*En mobile, los productos ponelos para abajo no para el costado*/
+    height: auto; /*la altura ahora es natural, la que necesite*/
+}
+
+.product {
+    margin-top: auto; /*que se ponga el margen que necesite para no pisarse entre ellos*/
+}
+
+.main_section {
+    padding: 4%; /*esta muy grande para mobile*/
+}
+
+.beneficios, .mentions {
+    display: inherit; /*tambien ponete en linea*/
+}
+
+}
+
+/*tambien, esto es mio, desde 1400 que suba asi se ve mejor en pantallas enormes*/
+@media (min-width: 1400px) {
+    .product{
+        margin-top: -350px;
+        max-width: 30%;
+      }
+    }

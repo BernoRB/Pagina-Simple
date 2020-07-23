@@ -1,0 +1,223 @@
+/*------ Variables */
+:root{
+    /*------ Colores */
+    --green-color: #7ACC2D;
+    --black-color: #313337;
+    --white-color: white;
+    /*------ Tipografía */
+    --normal:12px;
+    /*------ Espaciado */
+    --space:10px;
+    --space-2:20px;
+  }
+  
+  /* -------------------------------------------  */
+  html, body{
+    margin:0;
+    padding: 0;
+    font-family: helvetica;
+    color: var(--black-color);
+  }
+  
+  p{
+    font-size: var(--normal);
+  }
+  
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: var(--space);
+    min-height: 60px;
+    background-color: var(--green-color);
+  }
+  
+  nav a{
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: var(--normal);
+  }
+  
+  nav a:hover{
+    color: var(--white-color);
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav ul li{
+    padding-right: 20px;
+    list-style: none;
+  }
+  
+  hr{
+    opacity: .2;
+  }
+  
+  label {
+    font-size: var(--normal);
+  }
+
+  /* ------------------------------------------- MAIN SECTION */
+  
+  .main_section{
+    text-align: center;
+    padding: 10%;
+  }
+  
+  /* -------------------------------------------  PRODUCTOS */
+  
+  /* Todo esto es la imagen gris de fondo */
+  .products{
+    background-image: url("../images/curve.png");
+    padding: 15%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 75px;
+    background-size: cover;
+    justify-content: center;
+  }
+  
+  .product{
+    padding: 20px;
+    margin-top: -226px;
+  }
+  
+  .image-product{
+    text-align: center;
+  }
+  
+  .content{
+    padding: 20px;
+    background: var(--white-color);
+    border-radius: 3px;
+    box-shadow: 0px 0 2px 1px #e6e5e9;
+  }
+  
+  .main_btn{
+    padding: var(--space);
+    background-color: var(--green-color);
+    font-size: 17px;
+    width: 100%;
+    border: 0px;
+    border-radius: 2px;
+    cursor: pointer;
+    color: var(--white-color);
+  }
+  .main_btn:hover{
+    background-color: #63a426;
+  }
+  
+  /* Beneficios */
+  .beneficios{
+    justify-content: center;
+    padding: 5% 10% 5% 10%;
+    display: flex;
+  }
+  
+  .beneficio{
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .beneficio img{
+    max-height: 100px
+  }
+  
+  .text_beneficio{
+    text-align: justify;
+  }
+  
+  .mentions{
+    display: flex;
+    padding: 0% 5% 5% 5%;
+  }
+  .mention img{
+    width: 100%;
+  }
+  h2.mention_title{
+    text-align: center;
+  }
+  .mention{
+    padding: var(--space);
+  }
+  .content_mention{
+    box-shadow: 0px 0 2px 1px #e6e5e9;
+  }
+  .mention .text{
+    padding: var(--space);
+  }
+
+  /*Toco solamente el Productos de la pagina de productos*/
+  #titulo-prod{
+    text-decoration: underline;
+    opacity: 0.9;
+  }
+  
+  /* -------------------------------------------- Venta */
+
+  .modulo_pago{
+    background-color: var(--white-color);
+    box-shadow: 0px 0 2px 1px #e6e5e9;
+    padding: 10px;
+  }
+
+  .modulo_pago_images {
+    text-align: center; /*centramos la imagen*/
+    width: 100%; /*ocupe todo el container*/
+    margin: auto; /*centrarlo, divide el padding entre los costados*/
+    max-width: 500px; /*pa una pantalla muuuy grande... q no pixelee*/
+
+  }
+
+  /*No se puede editar el estilo de las label directamente arriba como editas p o div porque tienen
+  caracteristicas definidas. Para editarlas selecciono especificamente, en este caso le asigne clase data a todos los inputs y aca los llamo
+  Se puede si agregamos display:block en label pero no es reocmendable*/
+  .data{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid var(--black-color);
+    font-size: 17px;
+    box-sizing: border-box; /*se salia del margen porque no sabe 100% de que tomar, asi le aclaramos que es el 100% sin contar margin ni padding*/
+  }
+
+  .pago_btn{ /*en vez de cambiar podia hacer .modulo_pago .main_btn y aplicaba la diferencia solo a este*/
+    margin-top: 5px;
+    font-weight: bold;
+    padding: var(--space);
+    background-color: var(--green-color);
+    font-size: 17px;
+    width: 100%;
+    border: 0px;
+    border-radius: 2px;
+    cursor: pointer;
+    color: var(--white-color);
+  }
+
+  .pago_btn:hover { 
+    margin-top: 5px;
+    font-weight: bold;
+    padding: var(--space);
+    background-color: #599422;
+    font-size: 17px;
+    width: 100%;
+    border: 0px;
+    border-radius: 2px;
+    cursor: pointer;
+    color: var(--white-color);
+  }
+  /* ------------------------------------------- Footer */
+  footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--normal);
+    background-color: var(--black-color);
+    padding: var(--space);
+    color: var(--white-color);
+  }

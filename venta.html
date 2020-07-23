@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Este es un sitio de producto genial">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <title>BRAND📦</title>
+
+  </head> <!-- Cierra head -->
+
+  <body>
+    <nav>
+      <a href="index.html"><img src="images/logo.png" alt=""></a>
+      <ul>
+        <li>
+          <a href="faqs.html">Faqs</a></li>
+        <li>
+          <a href="#">Producto y descripción</a></li>
+      </ul>
+    </nav>
+
+  <br>
+  <br>
+  <br>  
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div class="modulo_pago">
+          <div class="modulo_pago_images">
+            <img src="images/box2.png" alt="">
+          </div>
+          <h3>
+            Producto 1
+          </h3>
+          <p>
+            El producto mas picante de todo el condado
+          </p>
+        </div>      </div>
+      <div class="col-8">
+        <div class="modulo_pago">
+          <form action="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=439287377-cf3c2d5f-c0c5-4190-8780-840246cc0826" method="post" target="_blank"> <!--El method post es necesario para que se entiendan, sino da error-->
+            <!-- Asocias la etiqueta (label) con el input poniendole a los dos el mismo for e id, en este caso name -->
+            <label for="name">Nombre</label>
+            <br>
+            <input type="text" placeholder="" id="name" class="data">
+            <br>
+            <label for="email">E-mail</label>
+            <br>
+            <input type="text" placeholder="" id="email" class="data">
+            <br>
+            <label for="phone">Telefono</label>
+            <br>
+            <input type="text" placeholder="" id="phone" class="data">
+            <br>
+            <input type="submit" class="pago_btn" id="submit" value="Completar Pago">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bien, del form de arriba faltaria crear una pagina de exito y error para despues del pago.  -->
+
+  </div>
+
+
+
+    
+
+    <!-- Inicio de footer -->
+    <footer class="footer">
+      <div class="option">Terminos y condiciones</div>
+      <div class="option"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bdded2d3c9dcdec9d2fddfcfdcd3d993ded2d0">[email&#160;protected]</a></div>
+    </footer>
+    <!-- Fin de Footer -->
+
+    <!-- Script -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="scripts/script.js"></script>
+  </body> <!-- Cierra body -->
+</html> <!-- Cierra html -->

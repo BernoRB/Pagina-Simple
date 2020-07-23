@@ -1,0 +1,108 @@
+:root {
+    --col-width: 8.33333333333%;
+  }
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.row {
+    display: flex;
+}
+
+/*calculo automatico, sino habria que poner en la 1 8.3333 en la otra 16.66666 en la otra 24.99999 y asi*/
+/*osea a ver entendelo: haces asi y si usas 12 columnas despues llamas 12 veces a col1, si queres que una seccion sean 4 llamas 4 veces a col4, si queres que sean 2 llamas 2 veces a col6, algo que ocupe todo es llamar una vez a col12*/
+.col-1 {
+    width: var(--col-width);
+  }
+  
+  .col-2 {
+    width: calc(var(--col-width) * 2);
+  }
+  
+  .col-3 {
+    width: calc(var(--col-width) * 3);
+  }
+  
+  .col-4 {
+    width: calc(var(--col-width) * 4);
+  }
+  
+  .col-5 {
+    width: calc(var(--col-width) * 5);
+  }
+  
+  .col-6 {
+    width: calc(var(--col-width) * 6);
+  }
+  
+  .col-7 {
+    width: calc(var(--col-width) * 7);
+  }
+  
+  .col-8 {
+    width: calc(var(--col-width) * 8);
+  }
+  
+  .col-9 {
+    width: calc(var(--col-width) * 9);
+  }
+  
+  .col-10 {
+    width: calc(var(--col-width) * 10);
+  }
+  
+  .col-11 {
+    width: calc(var(--col-width) * 11);
+  }
+  
+  .col-12 {
+    width: calc(var(--col-width) * 12);
+  }
+
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+      padding: 10px; /*se agrega para que no se pisen entre ellos los contenidos*/
+  }
+
+  .col-1 img,.col-2 img,.col-3 img,.col-4 img,.col-5 img,.col-6 img,.col-7 img,.col-8 img,.col-9 img,.col-10 img,.col-11 img,.col-12 img{
+    width: 50%; /*para que no sean de su tamaño real sino del contenedor*/
+    /* con estas dos cosas de abajo centro la imagen a la columna */
+    display: block;
+    margin:auto;
+}
+
+  .no-desk{
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .container{
+      padding: 30px;
+    }
+    .no-mobile{
+      display: none
+    }
+    .no-desk{
+      display: initial;
+    }
+    .row{
+      display: inline;
+      padding: 10px;
+    }
+    .col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+      width: 100%;
+      padding: 0px;
+    }
+  }
+
+  /*Esto lo hice yo. Fixie el footer abajo y le di que tenga 0 de abajo 0 a la izquierda y que ocupe ancho 100%
+  para que asi quede pegado abajo pase lo que pase. El resto de las cosas las toma de estilos.css asique ni te
+  ocupas de eso. Igual esta mal fixear elementos en estos tiempos*/
+.footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    width: 100%;
+}
